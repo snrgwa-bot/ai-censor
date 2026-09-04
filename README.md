@@ -1,16 +1,16 @@
-# Auto Redact — website
+# AI Censor — website
 
 Marketing, privacy policy, support and Terms of Use (EULA) pages for the
-**Auto Redact** iPhone app.
+**AI Censor** iPhone app.
 
-Published with GitHub Pages at <https://snrgwa-bot.github.io/auto-redact/>.
+Published with GitHub Pages at <https://snrgwa-bot.github.io/ai-censor/>.
 
 | Page | URL |
 |---|---|
-| Overview | `/auto-redact/` |
-| Privacy Policy | `/auto-redact/privacy` |
-| Support | `/auto-redact/support` |
-| Terms of Use (EULA) | `/auto-redact/terms` |
+| Overview | `/ai-censor/` |
+| Privacy Policy | `/ai-censor/privacy` |
+| Support | `/ai-censor/support` |
+| Terms of Use (EULA) | `/ai-censor/terms` |
 
 These URLs are referenced from inside the app (`AppLegal.swift`) and from the
 App Store listing, so changing a filename breaks a live link.
