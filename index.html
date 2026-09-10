@@ -3,89 +3,235 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hide what shouldn't be shared — AI Censor</title>
-<meta name="description" content="Cover faces, names, addresses and account numbers in photos and PDFs before you share them. Everything happens on your iPhone.">
+<title>AI Censor and Redactor — hide what shouldn't be shared</title>
+<meta name="description" content="Cover faces, names, addresses, phone numbers and account numbers in photos, PDFs and audio before you share them. Everything happens on your iPhone. No account, no uploads.">
+<meta name="theme-color" content="#0E7A4A" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b100e" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="AI Censor and Redactor">
+<meta property="og:description" content="Redact photos, PDFs and audio on your iPhone. Nothing is uploaded.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
+<a class="skip" href="#main">Skip to content</a>
+
 <header class="site">
-  <div class="mark" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
-  <div class="name">AI Censor</div>
-  <nav>
-    <a href="index.html" aria-current="page">Overview</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="support.html">Support</a>
-    <a href="terms.html">Terms</a>
-  </nav>
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <img src="img/icon.png" alt="AI Censor and Redactor app icon">
+      <span>AI Censor</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
 </header>
-<main>
-  <span class="pill">iPhone · iOS 17+</span>
-  <h1>Hide what shouldn't be shared</h1>
-  <p class="lede">AI Censor covers faces, names, addresses and account numbers in photos and PDF documents
-    before you send them. Everything happens on your iPhone — nothing is uploaded, and there is no account.</p>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Three ways to hide something</h3>
-      <p>Drag a box, rounded rectangle or oval over anything. Tap individual words. Or let the app find
-        faces and sensitive details for you.</p>
-    </div>
-    <div class="card">
-      <h3>It finds what you'd miss</h3>
-      <p>Names, emails, phone numbers, addresses, card and account numbers, national IDs, passports,
-        passwords, dates of birth, licence plates, web and IP addresses.</p>
-    </div>
-    <div class="card">
-      <h3>You decide what actually goes</h3>
-      <p>A review sheet lists everything found, by category. Switch a whole category off, or keep one
-        specific email visible while the rest is covered.</p>
-    </div>
-    <div class="card">
-      <h3>Four ways to cover</h3>
-      <p>Black bar, mosaic, blur, or an emoji sticker on an opaque plate. Adjust the strength, and
-        change your mind at any point — the style applies to everything on the page.</p>
-    </div>
-    <div class="card">
-      <h3>Photos and documents</h3>
-      <p>Up to 20 photos at once, or a PDF up to 50 pages. Redact page by page, or apply the automatic
-        tools across the whole batch.</p>
-    </div>
-    <div class="card">
-      <h3>Check before you send</h3>
-      <p>Pinch to zoom in up to 10× to confirm everything really is covered. One finger still draws,
-        two fingers pan.</p>
+<main id="main">
+
+  <div class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <img class="hero-icon" src="img/icon.png" alt="AI Censor and Redactor app icon: a crossed-out eye on a green rounded square">
+        <span class="pill">iPhone &middot; iOS 17+</span>
+        <h1>Hide what shouldn&rsquo;t be shared</h1>
+        <p class="lede">AI Censor covers faces, names, addresses, phone numbers and account numbers in
+          photos, PDFs and audio &mdash; before the file leaves your phone.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#device">How it stays private</a>
+          <a class="btn btn-ghost" href="#features">See what it does</a>
+        </div>
+        <p class="note">Coming to the App Store. Free to redact by hand &mdash; Pro unlocks automatic detection.</p>
+      </div>
+      <figure class="phone">
+        <img src="img/2-b-home.png" width="600" height="1298"
+             alt="The AI Censor home screen, offering Choose Photos, Take a Photo, Open a PDF and Open Audio, above a panel that reads &ldquo;Everything happens on this device&rdquo;.">
+        <figcaption>Start from a photo, the camera, a PDF or an audio file.</figcaption>
+      </figure>
     </div>
   </div>
 
-  <div class="prose">
-    <h2>Why the redactions are real</h2>
-    <p>A black rectangle drawn <em>on top of</em> a photo hides nothing — the original pixels are still in
-      the file, and the shape can be peeled away. AI Censor does not work that way.</p>
-    <p>When you export, the image is composited again from scratch and the covered areas are replaced with
-      new pixels. <strong>The hidden detail is not stored anywhere in the exported file and cannot be
-      recovered from it.</strong> The file also carries no EXIF, no GPS coordinates and no device
-      information, because it is encoded from a bare bitmap.</p>
-    <p>PDF pages are turned into images before being written back out, so the exported document contains
-      <strong>no text layer at all</strong>. This matters: the most common redaction failure is a black box
-      drawn over text that is still selectable underneath. There is nothing underneath here.</p>
+  <section id="features">
+    <div class="wrap">
+      <h2>Redaction that actually covers things</h2>
+      <p class="sub">Point it at a file, let it find the sensitive parts, then adjust anything by hand.</p>
 
-    <h2>An honest note about blur</h2>
-    <p>A light blur can sometimes be partially reversed by software. For identity documents, licence plates
-      and anything you would not want recovered, use a black bar or a strong mosaic. The app tells you this
-      at the moment it matters.</p>
+      <div class="cards">
+        <article class="card">
+          <span class="k">Faces</span>
+          <h3>Blur every face in one tap</h3>
+          <p>Cover whole faces, or choose to cover the eyes only when you want the photo to stay
+            recognisable as a scene but not as a person.</p>
+        </article>
+        <article class="card">
+          <span class="k">Text</span>
+          <h3>Automatic sensitive-text detection</h3>
+          <p>Finds emails, phone numbers, card numbers, addresses and ID numbers in the image. Or cover
+            all text at once, or cover a whole document in a single step.</p>
+        </article>
+        <article class="card">
+          <span class="k">By hand</span>
+          <h3>Draw, brush or tap words</h3>
+          <p>Drag a box over an area, paint freehand with an adjustable brush, or tap individual
+            recognised words to hide exactly those.</p>
+        </article>
+        <article class="card">
+          <span class="k">Styles</span>
+          <h3>Black bar, blur, mosaic, sticker, erase</h3>
+          <p>Every style has adjustable strength and optional soft edges, so a redaction can look
+            deliberate rather than like a smudge.</p>
+        </article>
+        <article class="card">
+          <span class="k">PDF</span>
+          <h3>Multi-page documents</h3>
+          <p>Open a multi-page PDF, redact page by page, and export a flattened copy where the hidden
+            areas are part of the page image.</p>
+        </article>
+        <article class="card">
+          <span class="k">Audio</span>
+          <h3>Bleep out spoken words</h3>
+          <p>The recording is transcribed on the device, so you can pick the names or numbers that were
+            said out loud and bleep them in the exported audio.</p>
+        </article>
+        <article class="card">
+          <span class="k">Watermark</span>
+          <h3>Your mark, your logo</h3>
+          <p>Add a tiled, centred or corner watermark &mdash; text or your own logo, with the background
+            removed automatically &mdash; and set size, opacity, angle and colour.</p>
+        </article>
+        <article class="card">
+          <span class="k">Export</span>
+          <h3>Clean files out</h3>
+          <p>Exported files carry no EXIF, no GPS and no device data. Save a new copy, or replace the
+            original in your library.</p>
+        </article>
+      </div>
 
-    <h2>What it costs</h2>
-    <p>Drawing over anything by hand, tapping words, and all four styles are free, with three exports a
-      day. AI Censor Pro adds automatic face and sensitive-text detection, PDF documents, and unlimited
-      exports — monthly, yearly with a three-day free trial, or a one-time lifetime purchase.</p>
-  </div>
+      <div class="shots" style="margin-top:44px">
+        <figure class="phone">
+          <img src="img/3-c-editor.png" width="600" height="1298"
+               alt="The editor showing a document covered with a repeating &ldquo;Confidential&rdquo; watermark, with Draw, Brush, Words and Remove tools and Blur, Mosaic, Black Bar, Sticker and Erase styles below it.">
+          <figcaption>Draw, brush, tap words or remove &mdash; in five redaction styles.</figcaption>
+        </figure>
+        <figure class="phone">
+          <img src="img/4-d-watermark.png" width="600" height="1298"
+               alt="The watermark sheet with preset labels Confidential, Copy, Sample and Do Not Copy, buttons to load a logo from Photos or Files, Tiled, Centred and Corner layouts, and sliders for size, opacity and angle.">
+          <figcaption>Tiled, centred or a corner stamp &mdash; with your own logo.</figcaption>
+        </figure>
+        <figure class="phone">
+          <img src="img/1-a-onboarding1.png" width="600" height="1298"
+               alt="An onboarding screen headed &ldquo;Share without oversharing&rdquo;, describing covering faces, names, addresses and account numbers before a photo or document leaves your phone.">
+          <figcaption>Built for the moment before you hit send.</figcaption>
+        </figure>
+        <figure class="phone">
+          <img src="img/5-e-onboarding3.png" width="600" height="1298"
+               alt="An onboarding screen headed &ldquo;It never leaves this device&rdquo;, with badges reading No account and No uploads.">
+          <figcaption>No account, no uploads, no analytics.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="device">
+    <div class="wrap">
+      <div class="band">
+        <h2>Everything happens on your device</h2>
+        <p class="sub">A redaction app that sends your documents to a server would defeat its own purpose.
+          This one does not have a server to send them to.</p>
+        <ul class="facts">
+          <li><strong>Detection runs on the device.</strong> Faces and text are found with Apple&rsquo;s
+            Vision framework, on your iPhone.</li>
+          <li><strong>Speech is transcribed on the device.</strong> On-device recognition is required in
+            code; the audio is never uploaded.</li>
+          <li><strong>No account, no login, no server.</strong> There is nothing to sign up for and
+            nothing to sign in to.</li>
+          <li><strong>No analytics, no third-party SDKs.</strong> Nothing measures what you open or
+            what you redact.</li>
+          <li><strong>Redactions are burned into the pixels.</strong> On export the hidden areas are
+            redrawn as new pixels, so the original detail is not inside the exported file.</li>
+          <li><strong>Exports carry no metadata.</strong> No EXIF, no GPS coordinates, no device
+            information travels with the file you share.</li>
+        </ul>
+        <p class="note" style="margin-top:24px">
+          One honest exception: if you choose <strong>Replace Original</strong>, the app asks Photos to
+          replace the asset in your own library, and Photos keeps that asset&rsquo;s original capture date
+          and location on the record. Export a new copy instead if you would rather not keep them.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <h2>Pricing</h2>
+      <p class="sub">Redact by hand for free. Pro is for the automatic work &mdash; and for PDFs, audio
+        and watermarks.</p>
+      <div class="tiers">
+        <article class="tier">
+          <h3>Free</h3>
+          <p class="price">$0</p>
+          <p>Redact by hand with every tool and style, and export up to <strong>3 files a day</strong>.</p>
+        </article>
+        <article class="tier">
+          <h3>Pro Monthly</h3>
+          <p class="price">$4.99 <span>/ month</span></p>
+          <p>Automatic detection, PDFs, audio bleeping, watermarks and unlimited exports.</p>
+        </article>
+        <article class="tier featured">
+          <span class="tag">3-day free trial</span>
+          <h3>Pro Yearly</h3>
+          <p class="price">$19.99 <span>/ year</span></p>
+          <p>Everything in Pro, billed once a year, after a 3-day free trial.</p>
+        </article>
+        <article class="tier">
+          <h3>Lifetime</h3>
+          <p class="price">$29.99 <span>once</span></p>
+          <p>Everything in Pro, paid once. No subscription.</p>
+        </article>
+      </div>
+      <p class="note">Subscriptions renew automatically unless cancelled at least 24 hours before the end
+        of the current period, and can be managed or cancelled in your Apple ID settings. Purchases are
+        handled by Apple &mdash; the app never sees your payment details.
+        <a href="terms.html">Terms of Use</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="contact">
+        <h2>Questions?</h2>
+        <p>Write to us and a person will answer. Bug reports and feature requests both welcome.</p>
+        <a class="mail" href="mailto:essentialdevteam@gmail.com?subject=AI%20Censor%20Support">essentialdevteam@gmail.com</a>
+        <p class="note"><a href="support.html">Read the support page and FAQ &rarr;</a></p>
+      </div>
+    </div>
+  </section>
+
 </main>
-<footer class="site">
-  <span>AI Censor — Essential Dev Team</span>
-  <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a>
-  <a href="https://apps.apple.com/us/developer/dumitru-bumbu/id1868107712">More apps</a>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <strong>AI Censor and Redactor</strong><br>
+        <span style="color:var(--text-3);font-size:.9rem">by Essential Dev Team</span>
+      </div>
+      <nav aria-label="Footer">
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a>
+      </nav>
+    </div>
+    <p class="foot-note">&copy; 2026 Essential Dev Team. This website uses no cookies, no analytics and
+      no third-party scripts.</p>
+  </div>
 </footer>
-</div>
+
 </body>
 </html>

@@ -1,16 +1,20 @@
-# AI Censor — website
+# AI Censor and Redactor — website
 
-Marketing, privacy policy, support and Terms of Use (EULA) pages for the
-**AI Censor** iPhone app.
+Marketing, support and legal pages for the iOS app **AI Censor and Redactor**
+by Essential Dev Team.
 
-Published with GitHub Pages at <https://snrgwa-bot.github.io/ai-censor/>.
+Served by GitHub Pages at <https://snrgwa-bot.github.io/ai-censor/>.
 
 | Page | URL |
 |---|---|
-| Overview | `/ai-censor/` |
+| Home | `/ai-censor/` |
+| Support & FAQ | `/ai-censor/support` |
 | Privacy Policy | `/ai-censor/privacy` |
-| Support | `/ai-censor/support` |
 | Terms of Use (EULA) | `/ai-censor/terms` |
 
-These URLs are referenced from inside the app (`AppLegal.swift`) and from the
-App Store listing, so changing a filename breaks a live link.
+The extensionless URLs above are linked from the shipping app and from the
+App Store listing. GitHub Pages resolves them to `support.html`, `privacy.html`
+and `terms.html`. **Do not rename or delete those files.**
+
+Static HTML and one stylesheet. No build step, no JavaScript, no cookies,
+no analytics, no third-party requests.

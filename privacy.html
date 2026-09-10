@@ -3,78 +3,219 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — AI Censor</title>
-<meta name="description" content="AI Censor collects no data. Everything happens on your device.">
+<title>Privacy Policy — AI Censor and Redactor</title>
+<meta name="description" content="The privacy policy for AI Censor and Redactor. No account, no server, no analytics, no third-party SDKs, and nothing is uploaded. All processing happens on your device.">
+<meta name="theme-color" content="#0E7A4A" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b100e" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
+<a class="skip" href="#main">Skip to content</a>
+
 <header class="site">
-  <div class="mark" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
-  <div class="name">AI Censor</div>
-  <nav>
-    <a href="index.html">Overview</a>
-    <a href="privacy.html" aria-current="page">Privacy</a>
-    <a href="support.html">Support</a>
-    <a href="terms.html">Terms</a>
-  </nav>
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <img src="img/icon.png" alt="AI Censor and Redactor app icon">
+      <span>AI Censor</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="index.html">Overview</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
 </header>
-<main class="prose">
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 3 September 2026</p>
 
-  <p><strong>AI Censor does not collect any data.</strong> There is no account, no server, no analytics
-    and no advertising. This policy is short because there is very little to describe.</p>
+<main id="main">
+  <div class="doc wrap">
+    <h1>Privacy Policy</h1>
+    <p class="meta">AI Censor and Redactor &middot; Essential Dev Team &middot; Last updated 10 September 2026</p>
 
-  <h2>What we collect</h2>
-  <p>Nothing. AI Censor has no backend of any kind. We cannot see your photos, your documents, or
-    anything you do in the app, because none of it is ever transmitted to us or to anyone else.</p>
+    <div class="prose">
 
-  <h2>Your photos and documents</h2>
-  <p>Photos and PDFs you open are processed entirely on your iPhone. Face detection and text recognition
-    use Apple's Vision and Natural Language frameworks, which run on the device. Nothing is uploaded for
-    processing.</p>
-  <p>The app keeps no library and no history. A document you open exists only while you are working on it,
-    and is discarded when you close it.</p>
+      <div class="callout">
+        <p><strong>The short version.</strong> AI Censor and Redactor does not collect anything. There is
+          no account, no login, no server of ours, no analytics and no third-party SDK. Your photos,
+          documents and recordings are processed on your device and are never uploaded to us or to anyone
+          else. We could not look at your files even if we wanted to, because they never reach us.</p>
+      </div>
 
-  <h2>Photo library access</h2>
-  <p>When you save a redacted image, iOS asks your permission to add to your photo library. AI Censor
-    requests <strong>add-only</strong> access for this — it does not read your library. If you choose
-    "Replace Original", the app asks for read and write access, because editing a photo in place requires
-    it. That edit is revertible from the Photos app.</p>
+      <nav class="toc" aria-label="Contents">
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#who">Who we are</a></li>
+          <li><a href="#collect">What we collect</a></li>
+          <li><a href="#device">On-device processing</a></li>
+          <li><a href="#permissions">Permissions</a></li>
+          <li><a href="#exports">Exported files and metadata</a></li>
+          <li><a href="#replace">Replace Original</a></li>
+          <li><a href="#purchases">Purchases and Apple</a></li>
+          <li><a href="#sharing">Sharing and third parties</a></li>
+          <li><a href="#retention">Storage and retention</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#rights">Your rights</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
 
-  <h2>Camera access</h2>
-  <p>If you take a photo inside the app, the camera is used only to capture that image, which stays on
-    your device.</p>
+      <h2 id="who">1. Who we are</h2>
+      <p>AI Censor and Redactor (&ldquo;AI Censor&rdquo;, &ldquo;the app&rdquo;) is an iPhone app published
+        by Essential Dev Team (Dumitru Bumbu). This policy explains how the app handles your information.
+        It applies to the app itself and to this website.</p>
 
-  <h2>Purchases</h2>
-  <p>Subscriptions and purchases are handled entirely by Apple through the App Store. We never see your
-    payment details. The app asks Apple whether a purchase is active; that is the only thing it checks.</p>
+      <h2 id="collect">2. What we collect</h2>
+      <p><strong>Nothing.</strong> To be specific, the app does not collect, transmit, store on our
+        systems, sell, rent or share any of the following:</p>
+      <ul>
+        <li>Your photos, PDFs, audio recordings or any file you open in the app.</li>
+        <li>The contents of any redaction &mdash; the names, numbers, addresses or faces you cover.</li>
+        <li>Your name, email address, phone number or postal address.</li>
+        <li>Your location.</li>
+        <li>Contacts, calendars, health data or messages.</li>
+        <li>Device identifiers, advertising identifiers or an IDFA.</li>
+        <li>Usage analytics, event logs, crash telemetry sent to us, or behavioural profiles.</li>
+      </ul>
+      <p>There is <strong>no account system</strong>: you cannot sign up, you cannot sign in, and there is
+        no user record to create, export or delete. There is <strong>no backend server</strong> operated
+        by us that the app talks to. There is <strong>no analytics SDK and no third-party SDK</strong>
+        embedded in the app &mdash; no advertising network, no attribution kit, no crash reporter of ours.</p>
+      <p>This website is a set of static pages served by GitHub Pages. It sets no cookies, runs no
+        analytics and loads no third-party scripts or fonts. GitHub, as the host, may process standard
+        server request information (such as IP address) for the purpose of serving the pages and
+        protecting the service; we do not receive that information.</p>
 
-  <h2>Network use</h2>
-  <p>The app makes one kind of network request: asking Apple's public App Store lookup endpoint whether a
-    newer version of AI Censor has been released, so it can offer you an update. This request contains
-    only the app's own identifier. It never includes anything about you or your files, and if it fails the
-    app simply carries on.</p>
+      <h2 id="device">3. On-device processing</h2>
+      <p>All of the app&rsquo;s work happens on your iPhone.</p>
+      <ul>
+        <li><strong>Face and text detection</strong> uses Apple&rsquo;s Vision framework, which runs
+          locally on the device. Detected faces, words, phone numbers, email addresses, card numbers,
+          addresses and ID numbers are held in memory only for as long as you have the file open.</li>
+        <li><strong>Speech transcription</strong>, used to let you bleep out spoken words, is set to
+          require on-device recognition in the app&rsquo;s code
+          (<code>requiresOnDeviceRecognition = true</code>). Your audio is not uploaded to us, and is not
+          sent to Apple&rsquo;s servers for transcription. The transcript exists on your device only.</li>
+        <li><strong>Redaction and export</strong> &mdash; blurring, mosaicking, black bars, stickers,
+          erasing, watermarking, PDF flattening and audio bleeping &mdash; are performed on the device.</li>
+      </ul>
+      <p>The app does not require an internet connection to do any of this.</p>
 
-  <h2>Children</h2>
-  <p>AI Censor is not directed at children and collects no personal information from anyone.</p>
+      <h2 id="permissions">4. Permissions the app may ask for</h2>
+      <p>Each permission is requested only when you use the feature that needs it, and each can be
+        withdrawn at any time in <strong>Settings &rsaquo; Privacy &amp; Security</strong> on your iPhone.
+        Declining a permission disables that one feature and nothing else.</p>
+      <ul>
+        <li><strong>Photos.</strong> To let you open a photo to redact, and to save the redacted result
+          back to your library. Photos you open are read on the device and are not uploaded.</li>
+        <li><strong>Camera.</strong> To let you take a photo inside the app and redact it immediately.
+          The app does not record video and does not use the camera in the background.</li>
+        <li><strong>Microphone.</strong> To let you record audio inside the app for bleeping. Recordings
+          stay on the device.</li>
+        <li><strong>Speech Recognition.</strong> To transcribe audio so you can choose which spoken words
+          to bleep. The app requires on-device recognition, so the audio is not sent off the device for
+          transcription.</li>
+      </ul>
+      <p>The app does not request access to your location, contacts, calendars, reminders, health data or
+        motion data.</p>
 
-  <h2>Your rights</h2>
-  <p>Because we hold no data about you, there is nothing to access, correct, export or delete on our side.
-    Everything the app stores lives on your device and is removed when you delete the app.</p>
+      <h2 id="exports">5. Exported files and metadata</h2>
+      <p>When you export, the app draws a new file. The covered areas are redrawn as new pixels, so the
+        original detail underneath a redaction is <strong>not present in the exported file</strong> &mdash;
+        it is not merely hidden behind a shape that could be removed later. Exported PDFs are flattened
+        for the same reason.</p>
+      <p>Exported files carry <strong>no EXIF metadata, no GPS coordinates and no device information</strong>.
+        Where the file goes afterwards is entirely your choice, through the standard iOS share sheet. Once
+        you share a file with another app or service, that app or service&rsquo;s own privacy policy
+        applies to it.</p>
 
-  <h2>Changes</h2>
-  <p>If this policy ever changes, the updated version will be posted on this page with a new date.</p>
+      <h2 id="replace">6. The &ldquo;Replace Original&rdquo; option</h2>
+      <p>We want to be precise about one exception. If you choose <strong>Replace Original</strong>, the
+        app asks the Photos app to replace that asset in your own photo library with the redacted version.
+        Photos handles this itself and asks you to confirm it.</p>
+      <p>Because Photos is updating an existing library item rather than creating a new one,
+        <strong>Photos keeps that item&rsquo;s own capture date and location</strong> on the record, even
+        though the redacted image file itself contains no EXIF or GPS data. This information stays inside
+        your library on your device (and in your iCloud Photos library, if you use it) &mdash; it is not
+        sent to us. If you would rather not keep it, export a new copy instead and delete the original
+        yourself.</p>
 
-  <h2>Contact</h2>
-  <p>Questions about privacy: <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a></p>
+      <h2 id="purchases">7. Purchases and Apple&rsquo;s role</h2>
+      <p>AI Censor Pro is sold through Apple&rsquo;s In-App Purchase system using StoreKit. All payment
+        processing is performed by Apple. <strong>The app never sees, receives or stores your payment
+        details</strong> &mdash; no card number, no billing address, no Apple ID password.</p>
+      <p>Your entitlement is checked against your Apple ID by the operating system, which is why restoring
+        a purchase on a new device works without any login of ours. Apple may provide us with anonymous,
+        aggregated sales and subscription reports (for example, how many units were sold in a country);
+        these contain no information that identifies you. Apple&rsquo;s handling of your purchase is
+        governed by
+        <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple&rsquo;s Privacy Policy</a>.</p>
+
+      <h2 id="sharing">8. Sharing and third parties</h2>
+      <p>We do not share your information with anyone, because we do not have any of your information to
+        share. We do not sell or rent data, and we do not use your files to train any model.</p>
+      <p>The only third party involved in the app is <strong>Apple</strong>, in its role as the App Store
+        and payment processor, and as the provider of the operating-system frameworks (Vision, Speech,
+        Photos, StoreKit) that run on your device.</p>
+
+      <h2 id="retention">9. Storage and retention</h2>
+      <p>Files you open and files you export are stored on your device, under your control. Temporary
+        working files created during editing live in the app&rsquo;s own sandbox and are removed when they
+        are no longer needed; deleting the app removes them along with the app&rsquo;s settings. Your
+        preferences (such as your default redaction style) are stored locally on your device.</p>
+      <p>We hold no copies of anything, so there is nothing for us to retain or to delete on request. If
+        you email us for support, we keep that correspondence only for as long as it takes to help you.</p>
+
+      <h2 id="children">10. Children</h2>
+      <p>The app is not directed at children and does not knowingly collect personal information from
+        anyone, including children under 13 (or the equivalent minimum age in your country). Since the app
+        collects no personal information at all, there is no children&rsquo;s data for us to hold. If you
+        believe a child has somehow provided us with personal information &mdash; for example by emailing
+        us &mdash; contact us and we will delete it.</p>
+
+      <h2 id="rights">11. Your rights</h2>
+      <p>Privacy laws such as the GDPR and the CCPA give you rights to access, correct, delete and port
+        the personal data a company holds about you, and to object to its sale. We hold no personal data
+        about you, so in practice there is nothing to access, correct, port or delete, and we have never
+        sold or shared personal information. You retain full control of your own files on your own device
+        at all times. If you have a question about this, write to us and we will answer it.</p>
+
+      <h2 id="changes">12. Changes to this policy</h2>
+      <p>If the app changes in a way that affects this policy, we will update this page and change the
+        &ldquo;Last updated&rdquo; date at the top. Material changes will also be noted in the App Store
+        release notes for the version that introduces them. Continuing to use the app after an update
+        means you accept the revised policy. Previous versions are available in this site&rsquo;s public
+        repository history.</p>
+
+      <h2 id="contact">13. Contact</h2>
+      <p>Questions about this policy, or about privacy in the app, go to a person who reads them:</p>
+      <p><a class="mail" href="mailto:essentialdevteam@gmail.com?subject=AI%20Censor%20Privacy">essentialdevteam@gmail.com</a></p>
+      <p>Essential Dev Team (Dumitru Bumbu), developer of AI Censor and Redactor.</p>
+
+    </div>
+  </div>
 </main>
-<footer class="site">
-  <span>AI Censor — Essential Dev Team</span>
-  <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a>
-  <a href="https://apps.apple.com/us/developer/dumitru-bumbu/id1868107712">More apps</a>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <strong>AI Censor and Redactor</strong><br>
+        <span style="color:var(--text-3);font-size:.9rem">by Essential Dev Team</span>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Overview</a>
+        <a href="support.html">Support</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="mailto:essentialdevteam@gmail.com">essentialdevteam@gmail.com</a>
+      </nav>
+    </div>
+    <p class="foot-note">&copy; 2026 Essential Dev Team. This website uses no cookies, no analytics and
+      no third-party scripts.</p>
+  </div>
 </footer>
-</div>
+
 </body>
 </html>
