@@ -37,8 +37,8 @@
   <div class="hero wrap">
     <div class="hero-grid">
       <div>
-        <img class="hero-icon" src="img/icon.png" alt="AI Censor and Redactor app icon: a crossed-out eye on a green rounded square">
-        <span class="pill">iPhone &middot; iOS 17+</span>
+        <img class="hero-icon" src="img/icon.png" alt="AI Censor and Redactor app icon: a figure in a hat and coat, face hidden in shadow">
+        <span class="pill">iPhone &amp; iPad &middot; iOS 17+</span>
         <h1>Hide what shouldn&rsquo;t be shared</h1>
         <p class="lede">AI Censor covers faces, names, addresses, phone numbers and account numbers in
           photos, PDFs and audio &mdash; before the file leaves your phone.</p>
@@ -56,55 +56,74 @@
     </div>
   </div>
 
+
+  <section id="demo">
+    <div class="wrap">
+      <h2 class="reveal">Watch it cover something</h2>
+      <p class="sub reveal">Two screenshots of the same document in the editor &mdash; the second after
+        three boxes were drawn across the name, the email and the card number. Nothing here is a mockup.</p>
+      <figure class="demo reveal">
+        <div class="demo-frame">
+          <img src="img/demo-before.jpg" width="1200" height="863"
+               alt="A sample driver licence open in the AI Censor editor, with the name John A. Smith, an email address and a card number all readable.">
+          <img class="after" src="img/demo-after.jpg" width="1200" height="863"
+               alt="The same licence after redaction: the name, email address and card number are blurred beyond reading, while the phone number and address are left alone.">
+          <span class="demo-tag">Drawn by hand, in three drags</span>
+        </div>
+        <figcaption>The blur is drawn into the pixels on export &mdash; it is not a layer that can be peeled off.</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section id="features">
     <div class="wrap">
       <h2>Redaction that actually covers things</h2>
       <p class="sub">Point it at a file, let it find the sensitive parts, then adjust anything by hand.</p>
 
-      <div class="cards">
-        <article class="card">
+      <div class="cards reveal-stagger">
+        <article class="card reveal">
           <span class="k">Faces</span>
           <h3>Blur every face in one tap</h3>
           <p>Cover whole faces, or choose to cover the eyes only when you want the photo to stay
             recognisable as a scene but not as a person.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
           <span class="k">Text</span>
           <h3>Automatic sensitive-text detection</h3>
           <p>Finds emails, phone numbers, card numbers, addresses and ID numbers in the image. Or cover
             all text at once, or cover a whole document in a single step.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
           <span class="k">By hand</span>
           <h3>Draw, brush or tap words</h3>
           <p>Drag a box over an area, paint freehand with an adjustable brush, or tap individual
             recognised words to hide exactly those.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
           <span class="k">Styles</span>
           <h3>Black bar, blur, mosaic, sticker, erase</h3>
           <p>Every style has adjustable strength and optional soft edges, so a redaction can look
             deliberate rather than like a smudge.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
           <span class="k">PDF</span>
           <h3>Multi-page documents</h3>
           <p>Open a multi-page PDF, redact page by page, and export a flattened copy where the hidden
             areas are part of the page image.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
           <span class="k">Audio</span>
           <h3>Bleep out spoken words</h3>
           <p>The recording is transcribed on the device, so you can pick the names or numbers that were
             said out loud and bleep them in the exported audio.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
           <span class="k">Watermark</span>
           <h3>Your mark, your logo</h3>
           <p>Add a tiled, centred or corner watermark &mdash; text or your own logo, with the background
             removed automatically &mdash; and set size, opacity, angle and colour.</p>
         </article>
-        <article class="card">
+        <article class="card reveal">
           <span class="k">Export</span>
           <h3>Clean files out</h3>
           <p>Exported files carry no EXIF, no GPS and no device data. Save a new copy, or replace the
@@ -113,33 +132,39 @@
       </div>
 
       <div class="shots" style="margin-top:44px">
-        <figure class="phone">
+        <figure class="phone reveal">
           <img src="img/3-c-editor.png" width="600" height="1298"
                alt="The editor showing a document covered with a repeating &ldquo;Confidential&rdquo; watermark, with Draw, Brush, Words and Remove tools and Blur, Mosaic, Black Bar, Sticker and Erase styles below it.">
           <figcaption>Draw, brush, tap words or remove &mdash; in five redaction styles.</figcaption>
         </figure>
-        <figure class="phone">
+        <figure class="phone reveal">
           <img src="img/4-d-watermark.png" width="600" height="1298"
                alt="The watermark sheet with preset labels Confidential, Copy, Sample and Do Not Copy, buttons to load a logo from Photos or Files, Tiled, Centred and Corner layouts, and sliders for size, opacity and angle.">
           <figcaption>Tiled, centred or a corner stamp &mdash; with your own logo.</figcaption>
         </figure>
-        <figure class="phone">
+        <figure class="phone reveal">
           <img src="img/1-a-onboarding1.png" width="600" height="1298"
                alt="An onboarding screen headed &ldquo;Share without oversharing&rdquo;, describing covering faces, names, addresses and account numbers before a photo or document leaves your phone.">
           <figcaption>Built for the moment before you hit send.</figcaption>
         </figure>
-        <figure class="phone">
+        <figure class="phone reveal">
           <img src="img/5-e-onboarding3.png" width="600" height="1298"
                alt="An onboarding screen headed &ldquo;It never leaves this device&rdquo;, with badges reading No account and No uploads.">
           <figcaption>No account, no uploads, no analytics.</figcaption>
         </figure>
       </div>
+
+      <figure class="tablet reveal">
+        <img src="img/6-f-ipad-editor.jpg" width="1000" height="1333"
+             alt="The same editor running on an iPad, with the automatic tools laid out in two rows above the drawing tools and the document filling the top of the screen.">
+        <figcaption>The same editor on iPad, with room for the whole page.</figcaption>
+      </figure>
     </div>
   </section>
 
   <section id="device">
     <div class="wrap">
-      <div class="band">
+      <div class="band reveal">
         <h2>Everything happens on your device</h2>
         <p class="sub">A redaction app that sends your documents to a server would defeat its own purpose.
           This one does not have a server to send them to.</p>
@@ -233,5 +258,32 @@
   </div>
 </footer>
 
+
+<script>
+// Decoration only. The class is what arms the CSS, so a page with JS off never
+// starts hidden — it just does not animate.
+document.documentElement.classList.add('js');
+(function () {
+  var targets = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    targets.forEach(function (el) { el.classList.add('is-in'); });
+    return;
+  }
+  document.querySelectorAll('.reveal-stagger').forEach(function (group) {
+    Array.prototype.forEach.call(group.children, function (child, i) {
+      child.style.setProperty('--i', i);
+    });
+  });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('is-in');
+      io.unobserve(e.target);   // reveal once; re-animating on scroll-back is noise
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: .08 });
+  targets.forEach(function (el) { io.observe(el); });
+})();
+</script>
 </body>
 </html>

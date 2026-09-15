@@ -326,3 +326,127 @@ footer.site-foot {
 .foot-grid nav a:hover { color: var(--accent); }
 .foot-note { color: var(--text-3); font-size: .86rem; margin: 22px 0 0; max-width: var(--measure); }
 .foot-note a { color: var(--text-2); }
+
+/* ---------- motion ----------
+   Everything below is decoration. The global prefers-reduced-motion rule near
+   the top already collapses animation and transition durations, so each block
+   here is written so that its FINAL keyframe is the state worth seeing: the
+   before/after demo settles on the redacted frame, revealed sections settle
+   visible. Nothing here is load-bearing — with CSS or JS off the page is the
+   same page, just still. */
+
+/* Aurora behind the hero — the app's own onboarding surface, two slow blurred
+   orbs over the page background. Sits under everything and never takes a tap. */
+.hero { position: relative; isolation: isolate; }
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(90px);
+  opacity: .30;
+}
+.hero::before {
+  width: 460px; height: 460px;
+  top: -170px; left: -150px;
+  background: var(--accent);
+  animation: aurora-a 19s ease-in-out infinite alternate;
+}
+.hero::after {
+  width: 380px; height: 380px;
+  top: 90px; right: -140px;
+  background: #2ACE8C;
+  opacity: .22;
+  animation: aurora-b 23s ease-in-out infinite alternate;
+}
+@media (prefers-color-scheme: dark) {
+  .hero::before { opacity: .26; }
+  .hero::after  { opacity: .20; }
+}
+@keyframes aurora-a {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(38px, 34px, 0) scale(1.08); }
+}
+@keyframes aurora-b {
+  from { transform: translate3d(0, 0, 0) scale(1.04); }
+  to   { transform: translate3d(-34px, 28px, 0) scale(.96); }
+}
+
+/* Before / after — two real screenshots of the same document in the editor,
+   one unredacted, one after three boxes were drawn. Pixel-aligned, so the only
+   thing that moves is the redaction. */
+.demo { margin: 0; }
+.demo-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+  background: var(--surface);
+}
+.demo-frame img { width: 100%; display: block; }
+.demo-frame .after {
+  position: absolute;
+  inset: 0;
+  animation: demo-swap 7s ease-in-out infinite;
+}
+@keyframes demo-swap {
+  0%, 22%    { opacity: 0; }
+  38%, 78%   { opacity: 1; }
+  94%, 100%  { opacity: 1; }
+}
+.demo-tag {
+  position: absolute;
+  left: 14px; bottom: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px; font-weight: 600;
+  letter-spacing: .01em;
+  background: rgba(12, 22, 18, .78);
+  color: #fff;
+  backdrop-filter: saturate(160%) blur(8px);
+  -webkit-backdrop-filter: saturate(160%) blur(8px);
+}
+.demo figcaption { margin-top: 12px; color: var(--text-3); font-size: 14px; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* Hold the redacted frame rather than flickering between the two. */
+  .demo-frame .after { opacity: 1; animation: none; }
+  .hero::before, .hero::after { animation: none; }
+}
+
+/* Sections fade up as they arrive. `.reveal` is only ever added by the inline
+   script; with JS off the elements are simply visible from the start. */
+.js .reveal {
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+  transition: opacity .55s ease, transform .55s cubic-bezier(.22,.61,.36,1);
+}
+.js .reveal.is-in { opacity: 1; transform: none; }
+.js .reveal-stagger > * { transition-delay: calc(var(--i, 0) * 55ms); }
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; transform: none; }
+}
+
+/* A screenshot lifts slightly when you point at it. Pointer devices only, so a
+   phone never gets a stuck hover state. */
+@media (hover: hover) and (pointer: fine) {
+  .phone img, .demo-frame { transition: transform .35s cubic-bezier(.22,.61,.36,1), box-shadow .35s ease; }
+  .phone:hover img { transform: translateY(-6px); }
+  .demo-frame:hover { transform: translateY(-4px); }
+}
+
+/* The iPad shot is 4:3, so it gets its own centred block rather than a column
+   in the phone grid, where it would sit half the height of its neighbours. */
+.tablet { margin: 36px auto 0; max-width: 560px; }
+.tablet img {
+  width: 100%; border-radius: 22px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+}
+.tablet figcaption {
+  font-size: .86rem; color: var(--text-3); margin-top: 12px; text-align: center;
+}
